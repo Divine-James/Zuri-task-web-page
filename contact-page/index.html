@@ -15,15 +15,28 @@
 
 <body>
     <header>
-        <h1 class="heading">i'll love to hear from you</h1>
+        <nav>
+            <div class="about">
+                <a href="../home-page/index.html">Home</a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../contact-page/index.html">Contact Me</a></li>
+                    <li><a href="../registration-page/index.html">Register</a></li>
+                    <li><a href="../login-page/index.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
     <main>
+        <h1 class="heading">i'll love to hear from you</h1>
         <div class="form">
             <form action="#">
                 <h1 class="header">Send me a Message</h1>
                 <div class="form__group">
                     <label for="name" class="form__label">Full name</label>
-                    <input type="text" class="form__input" placeholder="Fullname" id="name" required>
+                    <input type="text" class="form__input" placeholder="Fullname" id="name" maxlength="20" minlength="4" required>
                    
                 </div>
                 <div class="form__group">
@@ -33,7 +46,7 @@
                 </div>
                 <div class="form__group">
                     <label for="message" class="form__label">Enter Message</label>
-                    <input type="text" class="form__message" id="message" required>
+                    <textarea name="message" id="message" class="form__message" cols="30" rows="10" required>Enter Message</textarea>
                 </div>
                 <div class="btn">
                     <a href="#" class="button">Submit</a>
@@ -50,9 +63,9 @@
 
         </div>
         <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/divine_james"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/0ejemeh"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/0divine_e"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
 

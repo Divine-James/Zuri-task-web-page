@@ -9,7 +9,31 @@ body {
     font-size: 14px;
     font-family: "Nunito", sans-serif;
 }
-
+body ul {
+    list-style: none;
+  }
+  body a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding-top: 1rem;
+  }
+  nav .links ul {
+    display: flex;
+  }
+  nav .links ul li {
+    margin-left: 2rem;
+  }
+  nav .links ul li a:hover {
+    text-decoration: underline;
+  }
 .heading {
     font-size: 3.5rem;
     text-transform: uppercase;

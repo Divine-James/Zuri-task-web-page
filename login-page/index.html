@@ -14,9 +14,22 @@
 </head>
 <body>
     <header>
-        <h1 class="heading">login</h1>
+        <nav>
+            <div class="about">
+                <a href="../home-page/index.html">Home</a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../contact-page/index.html">Contact Me</a></li>
+                    <li><a href="../registration-page/index.html">Register</a></li>
+                    <li><a href="../login-page/index.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
     <main>
+        <h1 class="heading">login</h1>
         <div class="form">
             <form action="#">
                 <h1 class="header">Let's get started</h1>
@@ -27,7 +40,7 @@
                 </div>
                 <div class="form__group">
                     <label for="password" class="form__label">Password</label>
-                    <input type="password" class="form__input" required>
+                    <input type="password" class="form__input" pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                     
                 </div>
 
@@ -45,9 +58,9 @@
 
         </div>
         <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=10007959172725"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/0ejemeh"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/0divine_e"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
 </body>

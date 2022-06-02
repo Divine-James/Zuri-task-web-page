@@ -9,6 +9,31 @@ body {
   font-size: 14px;
   font-family: "Nunito", sans-serif;
 }
+body ul {
+  list-style: none;
+}
+body a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+  padding-top: 1rem;
+}
+nav .links ul {
+  display: flex;
+}
+nav .links ul li {
+  margin-left: 2rem;
+}
+nav .links ul li a:hover {
+  text-decoration: underline;
+}
 .heading{
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -32,7 +57,7 @@ body {
   height: 40rem;
   background-image: linear-gradient(to right bottom, hsl(215, 83%, 84%), hsl(215, 98%, 67%));
   margin: 3rem auto;
-  border: 2px solid rgb(18, 127, 243);
+  border: 2px solid rgb(3, 104, 212);
   border-radius: 10px;
 }
 
@@ -77,7 +102,7 @@ body {
   margin-left: 2rem;
   display: block;
   width: 75%;
-  height: 10rem;
+ 
   transition: all .3s;
 }
 .form__input:focus {
