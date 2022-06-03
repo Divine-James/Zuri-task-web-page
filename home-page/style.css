@@ -73,6 +73,17 @@
     width: 100%;
     position: relative;
   }
+  .illustration .media{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 2rem;
+    color: rgb(126, 80, 253);
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
   .illustration .name{
     position: absolute;
     top: 5rem;
@@ -211,87 +222,125 @@
   border-color: hsl(176, 68%, 64%);
   color: aqua;
 }
+@media (max-width:457px){
+  nav{
+    margin: 0 1rem;
+  }
+  nav .links ul li{
+    margin-left: 1rem;
+  }
+  nav .links{
+    width: 68%;
+  }
+  .illustration img{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0;
+    
+  }
+  .illustration .name{
+    visibility: hidden;
+    opacity: 0;
+  }
+  .illustration .media{
+    visibility: visible;
+    opacity: 1;
+  }
+  .About-section{
+   display: block;
+   margin-left: 1rem;
+   padding: 0;
+   margin-top: 0;
+  }
+  .About-section .detail-about{
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .About-section .detail-about .about{
+    width: 100%;
+  }
+  .get-to-know-me .priorities{
+    margin-left: 2rem;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+  }
 
-/*.btn{
-    &,
-    &:link,
-    &:visited{
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1.5rem 4rem;
-        display: inline-block;
-        border-radius: 10rem;
-        transition: all .2s;
-        position: relative;
-        font-size: $default-font-size;
-
-        border: none;
-        cursor: pointer;
-    }
-    &:hover{
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
-        &::after{
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
-    }
-    &:active,
-    &:focus{
-        outline: none;
-        transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-    }
-    &--white{
-        background-color: $color-white;
-        color: $color-grey-dark;
-        &::after{
-            background-color: #ffffff;
-        }
-    }
-    &--green{
-        background-color: $color-primary;
-        color: $color-white;
-        &::after{
-            background-color: $color-primary;
-        }
-    }
-    &::after{
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
-    }
-    &--animated{
-        animation: moveInBottom .5s ease-out .7s;
-        animation-fill-mode: backwards;
-    } 
 }
-.btn-text{
-    &:link,
-    &:visited{
-        font-size: $default-font-size;
-        color: $color-primary;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 1px solid $color-primary;
-        padding: 3px;
-        transition: all .2s;
-    }
-    &:hover{
-         background-color: $color-primary;
-         color: white;
-         box-shadow: 0 1rem 2rem rgba($color-black,.15);
-         transform: translateY(-2px);
-    }
-    &:active{
-        box-shadow: 0 .5rem 1rem rgba($color-black,.15);
-        transform: translateY(0);
-    }
+/*@media (max-width: 457px) {
+
+  .home-section{
+    height: 50vh;
+  }
+  .home-texts{
+    margin: 0 1rem;
+  }
+  .home-texts img{
+    width: 90%;
+  }
+  .home-texts h1{
+    width: 100%;
+  }
+  .home-texts h3{
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  .features-section{
+    padding-top: 23rem;
+    grid-template-columns: 1fr;
+  }
+  .features-section .box{
+    padding: 1rem 0;
+    margin: 0 2rem;
+  }
+  .productive-section{
+    flex-direction: column;
+    margin: 10rem 2rem;
+  }
+  .productive-section .detail{
+    width: 100%;
+    padding: 0;
+  }
+  .productive-section .illustration img{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .testimonial{
+    grid-template-columns: 1fr;
+    margin: 15rem 20px;
+  }
+  .testimonial .quote{
+    left: 0;
+  }
+  .early-access{
+    width: 80%;
+    padding: 1rem;
+  }
+  .early-access h1,
+  .early-access p{
+    padding: 1rem 0;
+  }
+  .early-access form input[type='email']{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .early-access form input[type='submit']{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .footer-elements{
+    grid-template-columns: 1fr;
+  }
+  footer .logo{
+    padding-top: 5rem;
+  }
+  footer .logo img{
+    width: 50%;
+  }
+  .social{
+    margin: 0 auto;
+  }
 }*/
